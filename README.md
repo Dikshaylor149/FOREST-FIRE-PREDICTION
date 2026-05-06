@@ -1,7 +1,7 @@
 # 🔥 FireGuard AI – Forest Fire Prediction System
 
 ---
-
+![Analysis](1.png)
 ## 📌 Problem Statement
 
 Forest fires are becoming increasingly frequent and destructive due to changing climate conditions. Early detection and risk assessment are critical, but traditional systems often lack accessibility, real-time analysis, and user-friendly interfaces. There is a need for a system that can analyze environmental factors and provide quick, reliable fire risk predictions.
