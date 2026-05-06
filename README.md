@@ -39,8 +39,44 @@ The system allows users to input or fetch environmental conditions and instantly
 
 ## 🛠️ How to Use
 
-### Step 1: Start ML Backend
+Step 1: Start ML Backend
 
 ```bash
 cd server/model
 python app.py
+
+Step 2: Start Node Backend
+cd server
+npm install
+npm start
+
+Step 3: Start Frontend
+cd fireguard-ai
+npm install
+npm run dev
+
+Step 4: Open Application
+
+Visit:
+http://localhost:3000
+Use the interface to perform live risk analysis
+
+⚙️ Environment Setup Guidelines
+🔹 Python Setup
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+🔹 Node Setup
+npm install
+🔹 Environment Variables
+Create a .env file in required directories and add:
+MONGO_URI=your_mongo_uri
+API_KEYS=your_api_keys
+
+This project is part of ongoing work and may be considered for patenting in the future.
+The code is shared publicly for demonstration and learning purposes only.
+
+All rights are reserved. Unauthorized use, reproduction, or distribution of this project is not permitted without prior permission.
+
+👤 Author
+Diksha Tank
