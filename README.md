@@ -34,7 +34,11 @@ The system allows users to input or fetch environmental conditions and instantly
 
 - 🔗 **API-Based Communication**  
   Seamless interaction between frontend, backend, and ML model.
-
+![Analysis](2.png)
+![Analysis](3.png)
+![Analysis](4.png)
+![Analysis](5.png)
+![Analysis](6.png)
 ---
 
 ## 🛠️ How to Use
