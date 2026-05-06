@@ -1,86 +1,16 @@
-# 🔥 FireGuard AI – Forest Fire Prediction System
+# React + Vite
 
----
-![Analysis](1.png)
-## 📌 Problem Statement
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Forest fires are becoming increasingly frequent and destructive due to changing climate conditions. Early detection and risk assessment are critical, but traditional systems often lack accessibility, real-time analysis, and user-friendly interfaces. There is a need for a system that can analyze environmental factors and provide quick, reliable fire risk predictions.
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 💡 Solution
+## React Compiler
 
-FireGuard AI is a full-stack application that predicts forest fire risk using machine learning and environmental data. It combines a web-based interface with a backend system and an ML model to provide real-time risk analysis.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-The system allows users to input or fetch environmental conditions and instantly receive predictions about the likelihood of a forest fire.
+## Expanding the ESLint configuration
 
----
-
-## 🚀 Key Idea and Features
-
-- 🔍 **Real-time Risk Prediction**  
-  Predicts fire probability based on environmental inputs.
-
-- 🧠 **Machine Learning Integration**  
-  Uses a trained ML model to analyze patterns in fire-related data.
-
-- 🌍 **Environmental Data Processing**  
-  Incorporates parameters like temperature, humidity, vegetation, etc.
-
-- 🖥️ **Full-Stack Architecture**  
-  - Frontend: React (Vite)  
-  - Backend: Node.js (Express)  
-  - ML Service: Python (Flask)
-
-- 🔗 **API-Based Communication**  
-  Seamless interaction between frontend, backend, and ML model.
-![Analysis](2.png)
-![Analysis](3.png)
-![Analysis](4.png)
-![Analysis](5.png)
-![Analysis](6.png)
----
-
-## 🛠️ How to Use
-
-Step 1: Start ML Backend
-
-```bash
-cd server/model
-python app.py
-
-Step 2: Start Node Backend
-cd server
-npm install
-npm start
-
-Step 3: Start Frontend
-cd fireguard-ai
-npm install
-npm run dev
-
-Step 4: Open Application
-
-Visit:
-http://localhost:3000
-Use the interface to perform live risk analysis
-
-⚙️ Environment Setup Guidelines
-🔹 Python Setup
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-🔹 Node Setup
-npm install
-🔹 Environment Variables
-Create a .env file in required directories and add:
-MONGO_URI=your_mongo_uri
-API_KEYS=your_api_keys
-
-This project is part of ongoing work and may be considered for patenting in the future.
-The code is shared publicly for demonstration and learning purposes only.
-
-All rights are reserved. Unauthorized use, reproduction, or distribution of this project is not permitted without prior permission.
-
-👤 Author
-Diksha Tank
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
