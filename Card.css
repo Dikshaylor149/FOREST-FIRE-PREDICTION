@@ -1,0 +1,96 @@
+
+/* TYPOGRAPHY FIXES */
+.card-title {
+  color: #ffffff !important; /* High contrast white */
+  font-size: 2.5rem; /* Larger, bold headers */
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.card-text {
+  color: #94a3a3 !important; /* Soft grey-teal for readability */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 90%; /* Prevents text from hitting the edge */
+  margin-bottom: 40px;
+}
+
+/* BUTTON STYLING */
+.card-action-btn {
+  align-self: flex-start;
+  background: transparent;
+  border: 1.5px solid #4ade80; /* OroraTech Green */
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 100px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  z-index: 5;
+}
+
+.card-action-btn:hover {
+  background: #4ade80;
+  color: #051818;
+}
+
+/* THE OVERSIZED CIRCLE PORTAL */
+.mask-container {
+  margin-top: auto;
+  position: relative;
+  /* Width must be significantly larger than card to create the 'flat' curve */
+  width: 180%; 
+  height: 400px;
+  left: -40%; /* Center the 180% width */
+  z-index: 1;
+}
+
+.product-card {
+  background-color: #0d2626;
+  border-radius: 32px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Essential for absolute children */
+  overflow: hidden;
+  padding: 50px 40px;
+  border: 3px solid #197965; 
+  transition: border 0.3s ease;
+}
+
+.card-inner {
+  position: relative;
+  z-index: 10; /* Keeps text and button above the image */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-action-btn {
+  position: relative;
+  z-index: 20; /* Highest priority for clicking */
+  margin-top: 20px;
+  align-self: flex-start;
+  /* ... your existing button styles ... */
+}
+
+/* THE FIX: Absolute positioning superimposes the image */
+.mask-container {
+  position: absolute;
+  bottom: -50px; /* Pulls it slightly off-screen for that curved look */
+  left: -30%;
+  width: 160%;
+  height: 450px; /* Tall enough to sit behind the button */
+  z-index: 1; /* Sits behind the card-inner content */
+  pointer-events: none; /* Button remains clickable through the container */
+}
+
+.circular-mask-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50% 50% 0 0;
+  opacity: 0.8; /* Slight transparency helps the 'superimpose' feel */
+}

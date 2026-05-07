@@ -1,0 +1,64 @@
+.portfolio-section {
+  background-color: #0c2328; /* Deep OroraTech Teal */
+  padding: 100px 0 200px 0;
+}
+
+.portfolio-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* 2-Column Header Split */
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.header-left, .header-right {
+  flex: 1;
+}
+
+.main-title {
+  color: #faf9f7;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 10px 0 0 0;
+}
+
+/* THE 2-COLUMN ZIGZAG GRID */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Force exactly 2 columns */
+  gap: 40px;
+  align-items: start;
+}
+
+/* Zigzag Logic: Shift the right-hand column down */
+.grid-item:nth-child(even) {
+  transform: translateY(160px) !important;
+}
+
+/* Ensure global masonry styles don't break the layout */
+.grid-item {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 992px) {
+  .portfolio-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-item:nth-child(even) {
+    transform: translateY(0) !important;
+  }
+}

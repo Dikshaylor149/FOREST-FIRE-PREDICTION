@@ -1,0 +1,31 @@
+/* index.css or App.css */
+:root {
+  --bg-dark-forest: #051818; /* The OroraTech dark teal */
+  --text-main: #ffffff;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-dark-forest);
+  color: var(--text-main);
+  /* This ensures the color fills the screen even if content is short */
+  min-height: 100vh; 
+}
+
+.home-container {
+  /* The exact OroraTech dark teal */
+  background-color: #051818; 
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* Optional: Smooth scrolling for the whole page */
+  scroll-behavior: smooth; 
+}
+
+/* Ensure Navbar and Hero don't have conflicting white backgrounds */
+.home-container > * {
+  background-color: transparent;
+}
+

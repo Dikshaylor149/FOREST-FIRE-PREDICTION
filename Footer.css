@@ -1,0 +1,117 @@
+.footer {
+  background-color: #051818;
+  color: #ffffff;
+  padding: 15px 0 10px 0;   /* even further reduced height */
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 15px;         /* reduced gap above footer */
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+/* BRAND SECTION */
+.footer-brand {
+  max-width: 320px;
+}
+
+.footer-logo {
+  font-size: 30px;               /* increased */
+  font-weight: 900;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+
+.footer-tagline {
+  font-size: 20px;               /* increased */
+  color: #94a3a3;
+  line-height: 1.75;
+}
+
+/* LINKS */
+.footer-links {
+  display: flex;
+  gap: 90px;
+}
+
+.link-group h4 {
+  font-size: 18px;               /* increased */
+  font-weight: 800;
+  margin-bottom: 28px;
+  color: #4ade80;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.link-group a {
+  display: block;
+  color: #94a3a3;
+  text-decoration: none;
+  margin-bottom: 16px;
+  font-size: 16px;               /* increased */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.link-group a:hover {
+  color: #ffffff;
+  transform: translateX(4px);    /* subtle polish */
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #617676;
+  font-size: 15px;               /* increased */
+}
+
+/* SOCIAL */
+.social-links {
+  display: flex;
+  gap: 22px;
+}
+
+.social-links a {
+  color: #94a3a3;
+  text-decoration: none;
+  font-size: 16px;               /* increased */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #4ade80;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    font-size: 26px;
+  }
+
+  .footer-tagline {
+    font-size: 16px;
+  }
+}
