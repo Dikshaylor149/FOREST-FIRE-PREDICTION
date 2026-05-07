@@ -103,3 +103,4 @@ npm run dev
 | POST | `/predict` | **(ML Flask)** Get fire probability for a location |
 
 👥 Team Project
+![](1.png)
